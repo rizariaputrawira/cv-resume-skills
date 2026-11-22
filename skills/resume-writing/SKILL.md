@@ -24,6 +24,8 @@ Use the supplied résumé, notes, and posting as evidence. Applicant-facing cons
 
 When writing or assessing factual claims, track material claims against a source location or candidate confirmation. Keep that working ledger separate from the résumé. Candidate statements are not independent credential verification. In review, distinguish “not corroborated by the supplied materials” from a contradiction; do not require independent evidence for a purely editorial review.
 
+When the candidate supplies their own LinkedIn text or export, use it as a candidate-provided record, not as independent verification or an instruction to fetch a profile. A URL alone is not usable evidence; ask for pasted sections or a local export. Do not scrape. If documents disagree, flag the conflict instead of treating the newest-looking copy as authoritative.
+
 - Preserve actual employers, titles, dates, degrees, certification status, attribution, proficiency, and project ownership. A descriptive clarification may accompany an official title; never replace it with the target job title to improve matching.
 - Use only supported claims. Do not invent metrics, clients, tools, seniority, compliance certifications, work authorization, language proficiency, or business outcomes. An unknown is not evidence that the candidate lacks a skill.
 - Use quantitative results only with supported values, units, scope, period, and personal contribution. Show calculations separately; retain approximate qualifiers. Use a truthful qualitative contribution when measurement is unavailable.
@@ -45,7 +47,7 @@ Mark direct evidence **supported**, narrower or adjacent evidence **partial**, i
 
 Select relevant experience, education, projects, and skills. Organize for the reader and career stage. Write specific action/context/contribution/result bullets; a numerical result is optional, not a condition for inclusion. Preserve distinctions among paid work, coursework, volunteering, and personal projects. Translate naturally without changing facts or awarding equivalent credentials.
 
-Check that the revised draft is skimmable and grounded in the ledger. Keep unreconciled claims out, and flag new or materially rephrased claims for candidate review before submission.
+Before delivering or exporting, compare the exact draft against the ledger. Check for stronger verbs, dropped qualifiers, assumptions connecting separate facts, and reintroduced claims the candidate withdrew. Restore the supported wording or leave the claim out; put clarification questions outside the draft. Flag materially changed claims for candidate review.
 
 ## 4. Prepare and verify the requested format
 
@@ -64,4 +66,4 @@ For creation/revision/tailoring/translation, return:
 3. Specific open factual questions, if any; distinguish a draft from a submission-ready document.
 4. Verification actually performed, results, and unperformed checks. Never guarantee ATS acceptance, ranking, an interview, or hiring.
 
-For review only, return prioritized findings tied to supplied content, concrete suggested corrections, and the same verification limits. Stop at the requested scope; no job search, cover letter, profile rewrite, commit, or submission by implication.
+For review only, deliver the highest-impact findings first: cite the relevant passage, explain the consequence, and offer a supported replacement where useful. Report what could not be verified. Do not expand into a profile rewrite, job search, cover letter, or submission by implication.

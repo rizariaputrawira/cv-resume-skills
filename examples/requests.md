@@ -37,3 +37,15 @@ Expected result: resolve purpose before imposing either document type. The word 
 > Use resume-writing to translate `.local/resume-en.md` into professional Indonesian for the Jakarta role described in `.local/job-id.md`. Preserve my qualifications and achievements without inventing local degree equivalencies. Ask if a destination-specific convention materially changes the document.
 
 Expected result: natural target-language editing, unchanged facts, and no fabricated proficiency or credentials. Locale-specific requirements still need evidence.
+
+## LinkedIn headline and About
+
+> Read `skills/linkedin-profile/SKILL.md`. My current role is Inventory Coordinator; I build weekly stock reports with spreadsheet pivots and completed a SQL course. I want to move into data analysis, but my employer must not see a public job-search signal. Draft a headline and About without implying I already hold the target title.
+
+Expected result: profile-specific draft copy that distinguishes work from coursework and does not announce availability. Live visibility is not checked or changed.
+
+## LinkedIn and résumé cross-check
+
+> Use `linkedin-profile` to compare my pasted LinkedIn Experience and Featured sections with my supplied résumé. My Experience dates disagree and some assets are internal. Report what needs checking; don't modify either source or visit any profile or asset link.
+
+Expected result: material factual conflicts and shareability risks first, without assuming which source is authoritative or treating unseen fields as empty.
