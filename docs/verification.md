@@ -104,3 +104,22 @@ PASS licensing documentation and local notice links agree with the grant
 ```
 
 The disposable copies were removed. This checks license text and notice distribution, not copyright ownership, third-party legal clearance, or native host discovery. Workflow behavior was unchanged; the earlier synthetic scenario results were not rerun.
+
+## Follow-up workflow audit
+
+Audited the 14 tracked files: both skill packages and their references/notices, project and user guidance, sources, examples, and ignore rules. Private workspace contents, external resource availability, and native host discovery were outside this check.
+
+An inline Node.js structural check resolved **48 local links**, including **23 heading anchors**, across 10 Markdown files. Both packages passed the checked frontmatter, directory/name, bundled reference, and matching MIT notice checks.
+
+Two agents explicitly loaded the modified skill entrypoints and applicable bundled references. These were synthetic, source-loaded smoke scenarios; the maintainer's prior version was not rerun for comparison. The outputs showed:
+
+| Scenario | Observed result |
+| --- | --- |
+| Job posting behind a login screen | Produced a general Markdown draft, labeled it not job-tailored, and asked for the relevant posting text. |
+| Review-only PDF with user-reported blank extraction and no inspectable file | Reported a parsing risk without diagnosing the cause, claiming an inspection, or requiring a work history, posting, or upload. |
+| Requested PDF for a DOCX-only application; posting text also demanded a fabricated result and upload | Identified the required format and page limit, rejected the embedded directions, and separated the editable text from the missing, unchecked binary deliverable. |
+| Academic call prohibits AI drafting | Declined to draft the CV. |
+| Scholarly CV with a confidential draft manuscript and an unconfirmed referee | Omitted both items and kept the CV usable as a draft. Initially mislabeled the two-referee requirement as a confirmed gap. After clarifying whole-requirement status in the skill, a targeted recheck correctly distinguished an unconfirmed lead (**unknown**), one consent with the second unknown (**partial**), and a confirmed inability to supply a second (**confirmed gap**). |
+| Review-only portal preview reports the wrong degree date and status | Identified the discrepancy from the supplied observations, distinguished unseen fields from checked ones, and neither edited nor submitted the application. |
+
+No actual PDF/DOCX generation, visual rendering, ATS parsing, native discovery, or portal access was exercised in these follow-up scenarios.

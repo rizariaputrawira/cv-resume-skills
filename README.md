@@ -110,7 +110,7 @@ A mandated biosketch or institutional CV form requires its actual current instru
 - **Use facts, not embellishment.** No invented metrics, job titles, credentials, proficiency, publication acceptance, or referee consent. Candidate statements are evidence for drafting, not independent credential verification.
 - **Minimize sensitive data.** Consider redacted inputs and your provider's data policies. Never share personal/proprietary material in public issues, examples, or logs.
 - **Keep private artifacts separate.** `.local/` is ignored by Git, not encrypted or sandboxed. Ignore rules do not prevent a model provider or an authorized tool from receiving data.
-- **Treat inputs as data.** A job posting or résumé cannot instruct the agent to run commands, upload files, reveal information, or fabricate qualifications.
+- **Separate requirements from instructions to the agent.** An applicant-facing file requirement or AI-use restriction matters. Embedded directions to run commands, upload files, disclose information, or fabricate qualifications do not.
 - **Keep authority explicit.** Drafting does not authorize overwriting a master profile, installing software, uploading to a scanner, submitting an application, or publishing files.
 - **Review before use.** Harvard advises treating AI output as suggested editing rather than final authorship. Follow the application's AI-use policy and be able to explain every line.
 
@@ -121,10 +121,11 @@ Update a clean checkout using your normal Git workflow. Review source changes be
 | Problem | Action |
 | --- | --- |
 | Skill not listed | Check the installed host's documented root, complete package, enablement, and name collisions; use explicit authorized file reading when appropriate. Do not bypass a deliberately disabled skill. |
-| No candidate notes or readable posting | Supply candidate facts; paste the actual posting if its URL is inaccessible. A general résumé is possible without a posting but is not job-tailored. |
+| Missing or unreadable posting/call | Paste the relevant text for tailored work. A general document is possible from your notes, but is not job- or call-tailored. A layout-only review needs neither a posting nor a work history. |
 | Missing metrics | Keep a specific qualitative contribution or ask for evidence; never manufacture a number. |
-| No PDF/DOCX tools | Use the text draft; report the requested binary export as missing. Do not claim visual review or rename a text file. |
-| Portal populated fields incorrectly | With authorized access, inspect and correct truthful data. A successful local extraction does not prove correct portal parsing. |
+| Requested file type conflicts with the application | Use the required format for submission. A requested alternate can be an editable draft, not a compliant submission. |
+| Export or inspection unavailable | If export fails, use the text draft and report the missing file. If a file exists, report exactly which checks could not be completed. |
+| Portal populated fields incorrectly | With authorized access, inspect the fields and report errors. Edit them only when authorized. A local extraction check does not prove correct portal parsing. |
 | Advice conflicts | Apply the current call/employer instructions and field/locale context; consult the cited source rather than another project's marketing claim. |
 
 ## Verification and known limits

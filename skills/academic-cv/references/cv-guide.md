@@ -53,7 +53,7 @@ Describe teaching scope: led sections, marked assignments, designed lessons, del
 
 Read this branch when the call requests referees or the candidate supplies referee details.
 
-Unlike a US industry résumé, an academic CV may include references or a separate reference sheet. Harvard GSAS includes references among basic areas; Berkeley discusses a separate page. Follow the actual call, field, and candidate's consent decision. Never fabricate referees, assume willingness, or disclose private referee details without permission. If consent is unknown, keep contact details out and ask; record the missing requirement separately rather than adding fake contacts.
+Unlike a US industry résumé, an academic CV may include references or a separate reference sheet. Harvard GSAS includes references among basic areas; Berkeley discusses a separate page. Follow the call and the field. Confirm that each referee has agreed to serve and the candidate authorizes including the supplied, current professional details. If either is unknown, leave the details out, ask the candidate, and record the unresolved requirement separately. Do not contact referees by implication.
 
 Avoid unnecessary demographic or sensitive information. A full home address, date of birth, marital status, photograph, or national identifier is not a default input. Locale and application requirements may differ; clarify them rather than copying a US or another country's convention globally.
 

@@ -22,10 +22,10 @@ These are project defaults chosen to reduce documented risks:
 
 ## File selection
 
-1. Follow the employer's required file type, template, page limit, and maximum size. A requested DOCX takes priority over a personal preference for PDF.
+1. Use the employer's required file type, template, page limit, and maximum size for submission. An alternate file type may be useful for editing but is not a compliant submission.
 2. If multiple formats are allowed, choose an inspectable text-based PDF for layout stability or DOCX when editability or the receiving workflow favors it. Neither is universally superior for parsing. Keep an editable source where useful; do not mandate both exports when only one is requested.
 3. Inspect the available tools before choosing an export route. An installed word processor/converter or authorized document skill may be usable; this package itself provides neither. Do not assume a particular LibreOffice wrapper, renderer, or font is present.
-4. Export from the reviewed final source into the private output location. Do not overwrite an existing application version without authorization. Do not install dependencies or use a cloud converter implicitly.
+4. Export from the reviewed source into the private output location. Preserve existing versions or ask before overwriting. Do not install dependencies or use a cloud converter implicitly.
 
 ## Verify the final artifact, not just its source
 
@@ -34,14 +34,14 @@ These are project defaults chosen to reduce documented risks:
 | Factual audit | Compare identity, roles, dates, metrics, qualifiers, and skills to candidate evidence | Independent credential verification |
 | Text extraction | Name, contact details, headings, dates, bullets, links, and non-ASCII text survive in sensible order | Any vendor's successful field mapping or ranking |
 | Visual inspection | Inspect every rendered page for clipping, overlap, legibility, broken bullets, orphan headings, and unintended blank pages | Correct parsing or hiring suitability |
-| File properties | Actual extension/type, requested page count, and applicable size limit | That upload acceptance means successful parsing |
-| Application preview | If the candidate authorizes access, inspect the actual portal's populated fields and correct errors with truthful data | Future screening results or other vendors' behavior |
+| File properties | Actual file type and size; page count from a suitable viewer/renderer when constrained | That upload acceptance means successful parsing |
+| Application preview | Inspect populated fields only with authorized access; report errors and edit fields only with separate authority to make changes | Future screening results or other vendors' behavior |
 
-Use an existing text extractor only if present. For example, an available `pdftotext` can inspect a PDF's text and reading order, and an available `pdfinfo` can report page count. Inspect the text rather than treating nonempty output or a successful exit status as sufficient. DOCX extraction must inspect body content in order; simply unzipping XML and seeing words is not a visual review.
+Use a suitable installed read-only extractor or viewer. For example, `pdftotext` can inspect a PDF's text and reading order, and `pdfinfo` can report its page count. Inspect the text; a successful exit status or nonempty output is not enough. DOCX extraction must inspect body content in order; seeing words in its XML is not visual review. If an existing PDF yields no readable text, report that observation without diagnosing the file as image-only unless inspection confirms it. For text-only critique, ask for the original editable file or pasted text rather than guessing what it says.
 
 A local text check must be reported as a **text-extraction check**, not “ATS tested,” “ATS passed,” or “100% ATS compatible.” Test data can behave differently from real candidate records; never upload synthetic or real data to an ATS without explicit permission.
 
-If binary generation is unavailable, provide the requested content as Markdown/plain text, identify the absent export, and state that visual/page-count and ATS checks are unperformed. Do not present the file request as completed. A successful export followed by a failed check remains a failed check until corrected.
+A real export and its checks are separate outcomes. Report missing checks individually; if a check fails, correct and recheck the affected artifact when possible or report the failure. Visual inspection requires seeing the actual rendered pages. If an authorized render of a DOCX is used as a proxy, identify the renderer and do not assert pagination in other word processors.
 
 ## Screening and keywords
 
