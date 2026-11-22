@@ -1,0 +1,10 @@
+# Candidate profiles, application records, generated documents, and local checks
+/.local/
+
+# Credentials and machine-local environment
+.env
+.env.*
+
+# Operating system artifacts
+.DS_Store
+Thumbs.db
