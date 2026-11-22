@@ -123,3 +123,19 @@ Two agents explicitly loaded the modified skill entrypoints and applicable bundl
 | Review-only portal preview reports the wrong degree date and status | Identified the discrepancy from the supplied observations, distinguished unseen fields from checked ones, and neither edited nor submitted the application. |
 
 No actual PDF/DOCX generation, visual rendering, ATS parsing, native discovery, or portal access was exercised in these follow-up scenarios.
+
+## LinkedIn profile and claim-fidelity checks
+
+A dependency-free Node.js structural check passed all three standalone packages, matching MIT notices, and 53 local links (23 heading anchors) across 12 Markdown files. It checked the frontmatter syntax used here, not native host discovery.
+
+Two agents explicitly loaded the working-tree skill entrypoints and relevant bundled references. The parent inspected the actual synthetic outputs:
+
+| Scenario | Observed result |
+| --- | --- |
+| LinkedIn rewrite for a discreet career change | Delivered a headline and first-person About that separated Excel reporting work from SQL coursework. Did not announce a job search, claim ownership of the existing system, or surface nonpublic client names or valuation. Recommended leaving both public and recruiter-only Open to Work off given the stated exposure risk. |
+| Featured asset selection | Recommended the cleared public release note, not the internal screenshot. Asked the user to check access because the actual link was not supplied. |
+| Profile versus résumé audit, and a separate URL-only request | Flagged confirmed false staff-management wording and unresolved title/date differences without silently picking a source. Left unseen fields unassessed; asked for pasted sections or an export when only a URL was given. No files or settings were changed. |
+| Résumé rewrite from profile text and candidate notes | Preserved the actual title and four-week observation window; kept approximate weekly volume without extrapolating unique annual orders, inventing savings, or reviving a withdrawn authorship claim. |
+| Academic CV from conflicting records | Omitted the disputed publication pending confirmation; preserved co-supervision and use of a lab tool without claiming sole supervision or tool development. |
+
+No baseline comparison, LinkedIn account access, live character-limit or audience checks, rendering, ranking tests, or native host installation was performed.

@@ -2,7 +2,7 @@
 
 **Your experience. Clearly evidenced.**
 
-Reusable AI-agent skills for writing **industry résumés** and **academic CVs**, informed by Harvard career guidance and documented ATS parsing risks. Start from your own experience, tailor it to the audience, and keep every claim supportable.
+Reusable AI-agent skills for writing **industry résumés**, **academic CVs**, and **LinkedIn profiles**. Résumé and CV guidance draws on Harvard and documented ATS parsing risks; profile guidance draws on LinkedIn's own documentation. Start from real experience, write for the audience, and keep every claim supportable.
 
 This repository contains instructions and references—not an ATS scanner, automatic application service, or bundled PDF/DOCX renderer. It does not promise interview outcomes or a universal “ATS score.”
 
@@ -30,9 +30,10 @@ This repository contains instructions and references—not an ATS scanner, autom
 | Review readability and ATS risks | [resume-writing](skills/resume-writing/SKILL.md) | Prioritized findings and specific corrections, without changing files unless requested |
 | Prepare a scholarly record | [academic-cv](skills/academic-cv/SKILL.md) | A field-appropriate CV covering relevant research, teaching, outputs, and service |
 | Translate an industry résumé | [resume-writing](skills/resume-writing/SKILL.md) | Natural target-language wording without changing credentials or achievements |
-| Prepare a requested PDF or DOCX | Either, with available authorized tools | The actual artifact and performed checks—or an explicit report that the export is unavailable |
+| Audit or write a personal LinkedIn profile | [linkedin-profile](skills/linkedin-profile/SKILL.md) | Prioritized findings or copy-ready sections, with privacy and manual publishing checks |
+| Prepare a requested PDF or DOCX | Résumé or CV skill, with authorized tools | The actual artifact and performed checks—or an explicit report that the export is unavailable |
 
-**Not included:** job discovery, cover letters, LinkedIn editing, recruiter outreach, application submission, paid scanners, dependency auto-installation, or model/host configuration.
+**Not included:** profile scraping, live LinkedIn edits, feed posts, recruiter outreach, job discovery, cover letters, application submission, paid scanners, or automatic dependency installation.
 
 ## Quick start
 
@@ -47,10 +48,11 @@ No package installation is needed to read the guidance or draft text. Your agent
 
 Keep real candidate notes and generated documents in `.local/`, which is Git-ignored, or another private workspace you choose. Do not put real candidate data in `examples/`.
 
-### 2. Choose the right document
+### 2. Choose the right skill
 
 - **Company/job application:** use `resume-writing`, including when the destination calls the document a “CV.”
 - **Academic/research application:** use `academic-cv`, especially when publications, teaching, fellowships, and scholarly service are central.
+- **LinkedIn profile:** use `linkedin-profile` for section rewrites, an audit, visibility advice, or checking it against a supplied résumé/CV.
 - **Unclear purpose:** the agent should clarify before imposing a format.
 
 ### 3. Ask your agent to read the skill
@@ -63,19 +65,25 @@ For an academic application:
 
 > Read `skills/academic-cv/SKILL.md` and follow it. Use `.local/academic-notes.md` and `.local/fellowship-call.md` to draft my CV. Preserve author order and publication status, follow the call's limits, and keep open questions outside the CV.
 
-Create/provide the private input files named in your request. They are examples of locations, not files shipped with this repository. See [more requests](examples/requests.md) for tailoring, review-only, translation, and ambiguous-CV cases.
+For LinkedIn:
+
+> Read `skills/linkedin-profile/SKILL.md` and follow it. Use the headline, About text, and career notes I provide to draft profile copy for analytics recruiters. I'm job searching discreetly. Don't sign in or change anything on LinkedIn.
+
+Create or supply any private input files named in your request. See [more requests](examples/requests.md) for tailoring, review, translation, and profile cross-checks.
 
 ### Optional: install in your agent's skills directory
 
-Copy **the entire chosen skill folder**, including `references/`, into a supported skill root. You may install either package independently. Check for an existing same-named destination before copying; do not overwrite local customizations blindly.
+Copy **the entire chosen skill folder**, including `references/` and `LICENSE`, into a supported skill root. Install only what you need. Check for an existing same-named destination before copying.
 
 | Host | Documented project location | Documented personal location | Explicit use after discovery |
 | --- | --- | --- | --- |
-| Codex | `.agents/skills/<skill-name>/` | `~/.agents/skills/<skill-name>/` | `$resume-writing` or `$academic-cv` |
-| Claude Code | `.claude/skills/<skill-name>/` | `~/.claude/skills/<skill-name>/` | `/resume-writing` or `/academic-cv` |
-| Other hosts | Follow the installed host's supported skill contract, or use explicit file reading | Host-dependent | Do not assume slash commands are portable |
+| Codex | `.agents/skills/<skill-name>/` | `~/.agents/skills/<skill-name>/` | `$skill-name` |
+| Claude Code | `.claude/skills/<skill-name>/` | `~/.claude/skills/<skill-name>/` | `/skill-name` |
+| Cursor | `.cursor/skills/<skill-name>/` | `~/.cursor/skills/<skill-name>/` | Select the skill from `/` in Agent chat |
+| VS Code with Copilot | `.github/skills/<skill-name>/` | `~/.copilot/skills/<skill-name>/` | Select the skill from `/` in chat |
+| Other hosts | Follow the host's supported skill contract or use explicit file reading | Host-dependent | Do not assume slash commands are portable |
 
-Locations and invocation are based on [OpenAI's documentation](https://learn.chatgpt.com/docs/build-skills) and [Claude Code's documentation](https://code.claude.com/docs/en/skills), checked 2026-11-22. Native discovery and invocation have **not** been runtime-tested here. A plain `skills/` source directory is not automatically discovered by every host. No installer, plugin package, or global setup is provided or run.
+Replace `skill-name` with the chosen directory name (for example, `/linkedin-profile` in Claude Code). These are documented paths for [Codex](https://learn.chatgpt.com/docs/build-skills), [Claude Code](https://code.claude.com/docs/en/skills), [Cursor](https://cursor.com/docs/skills), and [VS Code with Copilot](https://code.visualstudio.com/docs/agent-customization/agent-skills). Native discovery and invocation have **not** been runtime-tested here. The repository's plain `skills/` directory is the source, not a universal discovery root.
 
 ## How it works
 
@@ -83,7 +91,7 @@ Locations and invocation are based on [OpenAI's documentation](https://learn.cha
 2. **Establish facts:** use candidate-authored notes; separate supported claims, unknowns, and contradictions.
 3. **Select evidence:** map a supplied posting/call to real qualifications; retain honest gaps.
 4. **Write and review:** improve structure and wording while preserving titles, dates, contribution, and qualifiers.
-5. **Verify delivery:** check facts; inspect actual requested exports when tools exist; report missing checks accurately.
+5. **Verify delivery:** compare final wording to the evidence, check public disclosure for LinkedIn, and inspect actual document exports when tools exist. Report missing checks.
 
 The skill is a reusable procedure. The selected host supplies tools, execution, and permissions; the candidate supplies and reviews their record. Reading a skill neither grants upload/submission authority nor guarantees agent compliance.
 
@@ -105,6 +113,14 @@ Use for faculty, postdoctoral, research, fellowship, and grant contexts. Choose 
 
 A mandated biosketch or institutional CV form requires its actual current instructions; a generic CV is not a substitute.
 
+### LinkedIn profile
+
+[Entrypoint](skills/linkedin-profile/SKILL.md) · [Profile guide](skills/linkedin-profile/references/profile-guide.md)
+
+Use pasted sections, a supplied profile export, or career notes. Get a targeted headline, first-person About, truthful Experience and Skills, and suggestions for shareable Featured assets. A review can cover just one section; absent inputs are not assumed to be absent on the profile.
+
+This skill hands off copy for manual editing. It does not read a profile from a URL, access an account, or measure recruiter ranking. Recruiter-only Open to Work is not guaranteed private; turning off update notifications does not hide saved edits from profile viewers.
+
 ## Safety and privacy
 
 - **Use facts, not embellishment.** No invented metrics, job titles, credentials, proficiency, publication acceptance, or referee consent. Candidate statements are evidence for drafting, not independent credential verification.
@@ -122,6 +138,7 @@ Update a clean checkout using your normal Git workflow. Review source changes be
 | --- | --- |
 | Skill not listed | Check the installed host's documented root, complete package, enablement, and name collisions; use explicit authorized file reading when appropriate. Do not bypass a deliberately disabled skill. |
 | Missing or unreadable posting/call | Paste the relevant text for tailored work. A general document is possible from your notes, but is not job- or call-tailored. A layout-only review needs neither a posting nor a work history. |
+| Only a LinkedIn URL supplied | Paste the relevant sections, or provide a redacted local export. A URL alone cannot establish profile content or settings. |
 | Missing metrics | Keep a specific qualitative contribution or ask for evidence; never manufacture a number. |
 | Requested file type conflicts with the application | Use the required format for submission. A requested alternate can be an editable draft, not a compliant submission. |
 | Export or inspection unavailable | If export fails, use the text draft and report the missing file. If a file exists, report exactly which checks could not be completed. |

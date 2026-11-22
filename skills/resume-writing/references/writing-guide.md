@@ -34,6 +34,8 @@ Use **action + work/context + contribution or outcome**, including method and sc
 - Use present tense for ongoing responsibilities and past tense for completed work; keep punctuation and date style consistent. Neither a specific dash character nor a blanket past-tense rule is an established universal ATS requirement.
 - Use direct verbs and readable language. Expand unfamiliar abbreviations on first use; retain recognizable, accurate technical names. Harvard's advice against abbreviations is a clarity principle here, not a ban on standard terms such as SQL.
 
+If the candidate asks to quantify an unmeasured result, first look for supportable scope (frequency, volume, time period, audience, or deliverables). Request the missing baseline, denominator, or measurement only if it would support a useful claim. A range or lower bound still needs evidence: do not round a hunch down and call it a minimum, or turn a weekly count into unique annual users without evidence about repeat users and the observed period. Use a qualitative contribution if no defensible measure exists.
+
 ### Synthetic example: qualitative evidence
 
 Candidate note: “I built SQL checks for duplicate records in the monthly sales report. Finance used the checks. We did not measure time saved.”
@@ -53,6 +55,8 @@ Supported rewrite: “Reduced median report runtime from 20 to 12 minutes by add
 Read the actual job description, separate required and preferred qualifications, and map them to candidate evidence. Prioritize the most relevant supported examples, including transferable evidence from non-work settings when clearly labeled. Use an exact term or expanded acronym when it is accurate and useful; do not insert every synonym or repeat keywords to chase a density target.
 
 Do not change historical job titles, claim an unheld certification, infer proficiency from a job requirement, hide white text, add invisible keywords, or paste the job description into the résumé. The separate gap analysis may mention missing requirements; the résumé must not claim them.
+
+For a career transition, map **target capability → actual example → transferable contribution**. Translate jargon, not the role itself. For example, a retail associate who prepared stock reports can show reporting experience without becoming an “Inventory Analyst.” Label coursework, volunteer projects, or open-source work honestly. When citing GitHub work, state the specific contribution (such as tests, documentation, fixes, or release tooling) and link to public evidence only if appropriate. Do not turn use of GitHub into experience building CI/CD or maintaining a repository.
 
 ## Length, locale, and language
 

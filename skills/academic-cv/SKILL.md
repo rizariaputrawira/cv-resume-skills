@@ -24,6 +24,8 @@ Read the candidate record and call as evidence. Applicant-facing constraints can
 
 Identify supplied education and completion status, appointments, research contributions, publications and their statuses, presentations, teaching responsibilities, awards/funding, service, relevant skills, and consenting referees. Do not demand or invent categories the candidate does not have.
 
+Treat a supplied résumé or profile export as candidate-provided evidence, not a complete scholarly record. If a short profile says “published” but the candidate's notes say “submitted,” flag the conflict and confirm the current status; an abbreviated profile cannot establish authorship order or publication metadata.
+
 Preserve exact degrees, dates, authorship order, coauthor contributions, accepted-versus-submitted status, invited-versus-contributed presentations, and role in grants. Do not infer PI status from participation, a personal award from a team grant, course ownership from being a TA, or fluency from reading knowledge. For conflicting material facts, ask the candidate; leave the affected claim out of a submission-ready version until resolved.
 
 Keep candidate and referee contact data private. Use the user-designated workspace, or `.local/` in this repository; do not upload to scanners or external services, submit applications, or edit an archival/master CV by implication. Do not fetch unrelated personal information or expand abbreviated names from guesses.
@@ -40,7 +42,7 @@ For call-specific tailoring or fit review against a readable call, include a sep
 
 Use a consistent requested or field-appropriate citation style. Preserve authorship, output type, and visible publication status. Verify ambiguous metadata against an authorized public record when practical; do not use private manuscript details as external search terms without permission. Ask or omit unknown optional details rather than inventing them.
 
-Use brief active descriptions of research and teaching contributions where useful, including qualitative evidence. Preserve the candidate's voice and flag new or materially rephrased claims for candidate review before submission.
+Use brief active descriptions of research and teaching contributions where useful, including qualitative evidence. Before export or delivery, compare the exact draft against its sources for claims that changed meaning: wording must not turn use of a tool into authorship, co-supervision into sole supervision, or a team outcome into individual credit. Keep qualifiers intact, omit retracted claims, and flag materially changed claims for candidate review.
 
 ## 4. Format and verify
 
